@@ -29,7 +29,7 @@ body {
         Arial,
         sans-serif;
 
-    color: #4a2633;
+    color: #f5f2f3;
 
     overflow-x: hidden;
 
@@ -38,8 +38,8 @@ body {
         radial-gradient(
             circle at top,
             #ffeaf2,
-            #ffcbdc 45%,
-            #f4a9c4
+            #e9a4bb 45%,
+            #e08baa
         );
 
 }
@@ -203,7 +203,7 @@ body {
         15px;
 
     color:
-        #875468;
+        #96526d;
 
     font-size:
         18px;
@@ -214,7 +214,7 @@ body {
 .hello h1 {
 
     color:
-        #7c2947;
+        #642846;
 
     font-size:
         clamp(45px,8vw,85px);
@@ -660,7 +660,7 @@ body {
             circle at 50% 70%,
             #ffffff 0 20%,
             #ffd15c 21% 50%,
-            #ff7b4a 51% 75%,
+            #d15d33 51% 75%,
             transparent 76%
         );
 
@@ -1617,7 +1617,7 @@ body {
     .final-wish {
 
         font-size:
-            17px;
+            13px;
 
     }
 

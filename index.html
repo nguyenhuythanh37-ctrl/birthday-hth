@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#f7b4c9"
+    >
+
+    <title>Happy Birthday 🎂</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         NHẠC
+    =================================================== -->
+
+    <audio
+        id="backgroundMusic"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="music/birthday.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- NÚT BẬT / TẮT NHẠC -->
+
+    <button
+        id="musicButton"
+        class="music-button"
+        aria-label="Bật hoặc tắt nhạc"
+    >
+        🔇
+    </button>
+
+
+
+    <!-- ==================================================
+         TRANG 1
+    =================================================== -->
+
+    <section
+        id="page1"
+        class="page page-one"
+    >
+
+        <div class="date">
+
+            30 • 09 • 2026
+
+        </div>
+
+
+        <div class="hello">
+
+
+            <p class="small-text">
+
+                Hôm nay là một ngày đặc biệt...
+
+            </p>
+
+
+            <h1>
+
+                Happy Birthday
+
+            </h1>
+
+
+            <div class="birthday-icon">
+
+                🎂
+
+            </div>
+
+
+            <p class="intro">
+
+                Có một món quà nhỏ mà Thành đã chuẩn bị.<br>
+
+                Không phải một món quà quá lớn,<br>
+
+                nhưng hy vọng nó sẽ khiến Hương mỉm cười.
+
+            </p>
+
+
+            <button
+                id="startButton"
+                class="main-button"
+            >
+
+                Mở món quà ✨
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TRANG 2
+    =================================================== -->
+
+    <section
+        id="page2"
+        class="page cake-page hidden"
+    >
+
+
+        <!-- TIÊU ĐỀ -->
+
+        <div class="cake-title">
+
+            <p>
+
+                Trước khi xem tiếp...
+
+            </p>
+
+
+            <h1>
+
+                Hãy ước một điều 🎂
+
+            </h1>
+
+
+            <span>
+
+                rồi thổi nến nhé.
+
+            </span>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             BÁNH SINH NHẬT
+        =================================================== -->
+
+        <div class="cake-area">
+
+
+            <div class="cake-container">
+
+
+                <!-- LỬA -->
+
+                <div
+                    id="flame"
+                    class="flame"
+                ></div>
+
+
+                <!-- NẾN -->
+
+                <div class="candle">
+
+                    <div class="candle-body"></div>
+
+                </div>
+
+
+                <!-- PHẦN TRÊN BÁNH -->
+
+                <div class="cake-top"></div>
+
+
+                <!-- THÂN BÁNH -->
+
+                <div class="cake-body">
+
+
+                    <div class="cream cream1"></div>
+
+                    <div class="cream cream2"></div>
+
+                    <div class="cream cream3"></div>
+
+
+                </div>
+
+
+                <!-- ĐĨA -->
+
+                <div class="plate"></div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             NÚT THỔI NẾN
+        =================================================== -->
+
+        <button
+            id="blowButton"
+            class="main-button blow-button"
+        >
+
+            Thổi nến 🕯️
+
+        </button>
+
+
+        <p
+            id="message"
+            class="cake-message"
+        >
+
+            Hãy nhắm mắt lại và ước một điều nhé...
+
+        </p>
+
+
+
+        <!-- ==================================================
+             4 BỨC ẢNH
+        =================================================== -->
+
+        <div
+            id="photos"
+            class="photos"
+        >
+
+
+            <img
+                id="photo1"
+                class="memory-photo photo-1"
+                src="images/photo1.jpg"
+                alt="Kỷ niệm 1"
+            >
+
+
+            <img
+                id="photo2"
+                class="memory-photo photo-2"
+                src="images/photo2.jpg"
+                alt="Kỷ niệm 2"
+            >
+
+
+            <img
+                id="photo3"
+                class="memory-photo photo-3"
+                src="images/photo3.jpg"
+                alt="Kỷ niệm 3"
+            >
+
+
+            <img
+                id="photo4"
+                class="memory-photo photo-4"
+                src="images/photo4.jpg"
+                alt="Kỷ niệm 4"
+            >
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             SANG TRANG 3
+        =================================================== -->
+
+        <button
+            id="nextButton"
+            class="main-button next-button"
+        >
+
+            Đến lời chúc 💌
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TRANG 3
+    =================================================== -->
+
+    <section
+        id="page3"
+        class="page wish-page hidden"
+    >
+
+
+        <div class="wish-card">
+
+
+            <div class="heart">
+
+                ♡
+
+            </div>
+
+
+            <p class="wish-small">
+
+                Và cuối cùng...
+
+            </p>
+
+
+            <h1>
+
+                Gửi Hương một lời chúc
+
+            </h1>
+
+
+            <div class="line"></div>
+
+
+
+            <!-- ==================================================
+                 NỘI DUNG LỜI CHÚC
+            =================================================== -->
+
+            <div class="wish-text">
+
+
+                <p>
+
+                    Xin chào, thật ra Thành cũng đã suy nghĩ khá lâu không biết nên viết gì cho Hương trong ngày hôm nay...<br>
+Rồi cuối cùng cũng chẳng biết làm gì, vì vậy Thành đã làm web này để gửi đến Hương vài lời chúc nho nhỏ. <br>
+Có lẽ trang web này không phải là một món quà quá to lớn, nhưng nó là công sức mà Thành đã bỏ ra để gửi đến Hương <br>
+và mong rằng Hương sẽ thích nó. <br>
+
+Đầu tiên thì chúc mừng sinh nhật Hương nhé. Chúc Hương luôn vui vẻ, hạnh phúc và gặp nhiều may mắn trong cuộc sống. <br>
+Chúc cho tuổi mới của Hương sẽ có thật nhiều điều tốt đẹp, có những người thật lòng yêu thương Hương, <br>
+và có thật nhiều khoảnh khắc khiến Hương cảm thấy mình thật sự hạnh phúc. <br>
+
+Thật ra Thành cũng không biết phải nói những điều này như thế nào cho thật hay, <br>
+chỉ là Thành muốn Hương biết rằng Thành vẫn luôn trân trọng những khoảng thời gian mà hai đứa đã từng có với nhau. <br>
+Dù là những chuyện rất nhỏ thôi, nhưng với Thành, chúng vẫn là những kỷ niệm đáng nhớ. <br>
+
+Và có lẽ... điều Thành muốn gửi đến Hương không chỉ đơn giản là một lời chúc sinh nhật. <br>
+Thành mong rằng dù sau này mọi thứ có thay đổi như thế nào, Hương vẫn sẽ luôn vui vẻ và sống thật hạnh phúc theo cách mà Hương mong muốn. <br>
+
+Chúc mừng sinh nhật Hương. 🎂<br>
+Hy vọng hôm nay, ngày mai, và cả những ngày sau này, Hương đều sẽ có thật nhiều lý do để mỉm cười
+
+                </p>
+
+
+                <p class="final-wish">
+
+                    Chúc mừng sinh nhật Hương. 🎂❤️
+
+                    <br><br>
+
+                    Mong rằng hôm nay sẽ là một ngày thật đẹp.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- CHỮ KÝ -->
+
+            <div class="signature">
+
+                From Thành ❤️
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1685 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color: #4a2633;
+
+    overflow-x: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at top,
+            #ffeaf2,
+            #ffcbdc 45%,
+            #f4a9c4
+        );
+
+}
+
+
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-button {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.75);
+
+    backdrop-filter:
+        blur(10px);
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 5px 20px
+        rgba(80,30,50,.18);
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+}
+
+
+.music-button:hover {
+
+    transform:
+        scale(1.1);
+
+    background:
+        rgba(255,255,255,.95);
+
+}
+
+
+.music-button:active {
+
+    transform:
+        scale(.92);
+
+}
+
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        50px 20px;
+
+    position: relative;
+
+    opacity: 1;
+
+    transition:
+        opacity .6s ease;
+
+}
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+.fade-out {
+
+    opacity: 0;
+
+}
+
+
+
+/* =====================================================
+   TRANG 1
+===================================================== */
+
+.page-one {
+
+    text-align: center;
+
+}
+
+
+.date {
+
+    position: absolute;
+
+    top: 30px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    color:
+        #8d5367;
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.hello {
+
+    width:
+        min(700px,100%);
+
+    animation:
+        fadeUp 1.2s ease;
+
+}
+
+
+.small-text {
+
+    margin-bottom:
+        15px;
+
+    color:
+        #875468;
+
+    font-size:
+        18px;
+
+}
+
+
+.hello h1 {
+
+    color:
+        #7c2947;
+
+    font-size:
+        clamp(45px,8vw,85px);
+
+    line-height:
+        1.1;
+
+}
+
+
+.birthday-icon {
+
+    margin:
+        25px 0;
+
+    font-size:
+        70px;
+
+    animation:
+        floating 3s ease-in-out infinite;
+
+}
+
+
+.intro {
+
+    margin-bottom:
+        35px;
+
+    color:
+        #633d4d;
+
+    font-size:
+        18px;
+
+    line-height:
+        1.8;
+
+}
+
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.main-button {
+
+    border:
+        none;
+
+    border-radius:
+        50px;
+
+    padding:
+        14px 30px;
+
+    background:
+        #8e3154;
+
+    color:
+        white;
+
+    font-size:
+        16px;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 8px 20px
+        rgba(100,35,60,.2);
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease,
+        opacity .6s ease;
+}
+
+
+.main-button:hover {
+
+    transform:
+        translateY(-4px);
+
+    background:
+        #a43d63;
+
+    box-shadow:
+        0 12px 28px
+        rgba(100,35,60,.28);
+
+}
+
+
+.main-button:active {
+
+    transform:
+        scale(.96);
+
+}
+
+
+.main-button:disabled {
+
+    cursor:
+        default;
+
+}
+
+
+
+/* =====================================================
+   TRANG 2
+===================================================== */
+
+.cake-page {
+
+    justify-content:
+        flex-start;
+
+    padding-top:
+        70px;
+
+    text-align:
+        center;
+
+}
+
+
+.cake-title {
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.cake-title p {
+
+    margin-bottom:
+        8px;
+
+    color:
+        #805063;
+
+    font-size:
+        17px;
+
+}
+
+
+.cake-title h1 {
+
+    margin-bottom:
+        7px;
+
+    color:
+        #7c2947;
+
+    font-size:
+        clamp(30px,5vw,50px);
+
+}
+
+
+.cake-title span {
+
+    color:
+        #916073;
+
+    font-size:
+        15px;
+
+}
+
+
+
+/* =====================================================
+   CAKE
+===================================================== */
+
+.cake-area {
+
+    height:
+        285px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+}
+
+
+.cake-container {
+
+    position:
+        relative;
+
+    width:
+        320px;
+
+    height:
+        270px;
+
+}
+
+
+
+/* ĐĨA */
+
+.plate {
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    bottom:
+        0;
+
+    width:
+        320px;
+
+    height:
+        25px;
+
+    background:
+        #ffffff;
+
+    border-radius:
+        50%;
+
+    box-shadow:
+        0 10px 20px
+        rgba(80,30,50,.15);
+
+}
+
+
+
+/* THÂN BÁNH */
+
+.cake-body {
+
+    position:
+        absolute;
+
+    left:
+        40px;
+
+    bottom:
+        20px;
+
+    width:
+        240px;
+
+    height:
+        100px;
+
+    background:
+        linear-gradient(
+            #d87896,
+            #bd5275
+        );
+
+    border-radius:
+        12px 12px 25px 25px;
+
+    box-shadow:
+        inset 0 -10px 0
+        rgba(100,30,55,.12);
+
+}
+
+
+
+/* MẶT BÁNH */
+
+.cake-top {
+
+    position:
+        absolute;
+
+    left:
+        35px;
+
+    bottom:
+        95px;
+
+    width:
+        250px;
+
+    height:
+        55px;
+
+    background:
+        #fff1f5;
+
+    border-radius:
+        50%;
+
+    box-shadow:
+        inset 0 -8px 0
+        #e9a1b8;
+
+}
+
+
+
+/* KEM */
+
+.cream {
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    width:
+        35px;
+
+    height:
+        45px;
+
+    background:
+        #fff1f5;
+
+    border-radius:
+        0 0 50% 50%;
+
+}
+
+
+.cream1 {
+
+    left:
+        30px;
+
+}
+
+
+.cream2 {
+
+    left:
+        103px;
+
+}
+
+
+.cream3 {
+
+    right:
+        30px;
+
+}
+
+
+
+/* NẾN */
+
+.candle {
+
+    position:
+        absolute;
+
+    left:
+        149px;
+
+    bottom:
+        145px;
+
+    width:
+        22px;
+
+    height:
+        75px;
+
+    z-index:
+        5;
+
+}
+
+
+.candle-body {
+
+    width:
+        22px;
+
+    height:
+        75px;
+
+    background:
+
+        repeating-linear-gradient(
+            45deg,
+            #ffffff,
+            #ffffff 7px,
+            #ff9dbc 7px,
+            #ff9dbc 14px
+        );
+
+    border-radius:
+        5px;
+
+}
+
+
+
+/* LỬA */
+
+.flame {
+
+    position:
+        absolute;
+
+    left:
+        147px;
+
+    bottom:
+        215px;
+
+    width:
+        25px;
+
+    height:
+        38px;
+
+    z-index:
+        10;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 70%,
+            #ffffff 0 20%,
+            #ffd15c 21% 50%,
+            #ff7b4a 51% 75%,
+            transparent 76%
+        );
+
+    border-radius:
+        50%;
+
+    animation:
+        flame .8s infinite alternate;
+
+    transition:
+        opacity .5s ease,
+        transform .5s ease;
+}
+
+
+.flame.off {
+
+    opacity:
+        0;
+
+    transform:
+        scale(.15)
+        translateY(20px);
+
+}
+
+
+
+/* =====================================================
+   THÔNG BÁO
+===================================================== */
+
+.cake-message {
+
+    margin:
+        5px 0 15px;
+
+    color:
+        #754356;
+
+    font-size:
+        16px;
+
+    min-height:
+        24px;
+
+}
+
+
+
+/* =====================================================
+   ẢNH
+===================================================== */
+
+.photos {
+
+    position:
+        relative;
+
+    width:
+        min(1000px,100%);
+
+    height:
+        450px;
+
+    margin-top:
+        10px;
+
+}
+
+
+
+/* ẢNH CHUNG */
+
+.memory-photo {
+
+    position:
+        absolute;
+
+    width:
+        190px;
+
+    height:
+        250px;
+
+    object-fit:
+        cover;
+
+    padding:
+        7px;
+
+    background:
+        white;
+
+    border-radius:
+        14px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(80,30,50,.25);
+
+    opacity:
+        0;
+
+    transition:
+        opacity 1s ease,
+        transform 1s cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+
+/* =====================================================
+   VỊ TRÍ BAN ĐẦU
+===================================================== */
+
+
+/* ẢNH 1 - từ trái */
+
+.photo-1 {
+
+    left:
+        4%;
+
+    top:
+        185px;
+
+    transform:
+        translateX(-180px)
+        rotate(-14deg)
+        scale(.65);
+
+}
+
+
+/* ẢNH 2 - từ phải */
+
+.photo-2 {
+
+    right:
+        4%;
+
+    top:
+        35px;
+
+    transform:
+        translateX(180px)
+        rotate(14deg)
+        scale(.65);
+
+}
+
+
+/* ẢNH 3 - từ trên */
+
+.photo-3 {
+
+    left:
+        13%;
+
+    top:
+        -130px;
+
+    transform:
+        translateY(-180px)
+        rotate(-20deg)
+        scale(.65);
+
+}
+
+
+/* ẢNH 4 - từ dưới */
+
+.photo-4 {
+
+    left:
+        43%;
+
+    bottom:
+        -13px;
+
+    transform:
+        translateY(180px)
+        rotate(10deg)
+        scale(.65);
+
+}
+
+
+
+/* =====================================================
+   KHI ẢNH XUẤT HIỆN
+===================================================== */
+
+.memory-photo.show {
+
+    opacity:
+        1;
+
+}
+
+
+.photo-1.show {
+
+    transform:
+        translateX(0)
+        rotate(-8deg)
+        scale(1);
+
+}
+
+
+.photo-2.show {
+
+    transform:
+        translateX(0)
+        rotate(8deg)
+        scale(1);
+
+}
+
+
+.photo-3.show {
+
+    transform:
+        translateY(0)
+        rotate(-4deg)
+        scale(1);
+
+}
+
+
+.photo-4.show {
+
+    transform:
+        translateY(0)
+        rotate(5deg)
+        scale(1);
+
+}
+
+
+
+/* =====================================================
+   NÚT TRANG 3
+===================================================== */
+
+.next-button {
+
+    margin-top:
+        10px;
+
+    opacity:
+        0;
+
+    pointer-events:
+        none;
+
+}
+
+
+.next-button.show {
+
+    opacity:
+        1;
+
+    pointer-events:
+        auto;
+
+}
+
+
+
+/* =====================================================
+   TRANG 3
+===================================================== */
+
+.wish-page {
+
+    justify-content:
+        flex-start;
+
+    padding:
+        70px 20px;
+
+    overflow-y:
+        auto;
+
+}
+
+
+.wish-card {
+
+    width:
+        min(760px,100%);
+
+    margin:
+        20px auto;
+
+    padding:
+        55px 60px;
+
+    background:
+        rgba(255,255,255,.78);
+
+    backdrop-filter:
+        blur(12px);
+
+    border-radius:
+        25px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(100,40,60,.15);
+
+    animation:
+        fadeUp 1s ease;
+
+}
+
+
+
+/* TRÁI TIM */
+
+.heart {
+
+    margin-bottom:
+        10px;
+
+    text-align:
+        center;
+
+    color:
+        #c64b72;
+
+    font-size:
+        55px;
+
+}
+
+
+
+/* DÒNG NHỎ */
+
+.wish-small {
+
+    margin-bottom:
+        10px;
+
+    color:
+        #916073;
+
+    text-align:
+        center;
+
+    font-size:
+        15px;
+
+}
+
+
+
+/* TIÊU ĐỀ */
+
+.wish-card h1 {
+
+    color:
+        #7c2947;
+
+    text-align:
+        center;
+
+    font-size:
+        clamp(30px,5vw,48px);
+
+}
+
+
+
+/* ĐƯỜNG KẺ */
+
+.line {
+
+    width:
+        70px;
+
+    height:
+        3px;
+
+    margin:
+        25px auto 40px;
+
+    background:
+        #c15c7d;
+
+}
+
+
+
+/* NỘI DUNG */
+
+.wish-text {
+
+    color:
+        #563642;
+
+    text-align:
+        left;
+
+    font-size:
+        17px;
+
+    line-height:
+        2;
+
+}
+
+
+.wish-text p {
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.wish-text strong {
+
+    color:
+        #8e3154;
+
+    font-weight:
+        600;
+
+}
+
+
+
+/* LỜI CUỐI */
+
+.final-wish {
+
+    margin-top:
+        35px;
+
+    color:
+        #8e3154;
+
+    text-align:
+        center;
+
+    font-size:
+        19px;
+
+    font-weight:
+        600;
+
+}
+
+
+
+/* CHỮ KÝ */
+
+.signature {
+
+    margin-top:
+        40px;
+
+    padding-top:
+        25px;
+
+    border-top:
+        1px solid
+        rgba(120,60,80,.15);
+
+    color:
+        #967080;
+
+    text-align:
+        right;
+
+    font-size:
+        15px;
+
+    font-style:
+        italic;
+
+}
+
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes floating {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-10px);
+
+    }
+
+}
+
+
+@keyframes flame {
+
+    from {
+
+        transform:
+            scale(1)
+            rotate(-2deg);
+
+    }
+
+    to {
+
+        transform:
+            scale(1.08)
+            rotate(2deg);
+
+    }
+
+}
+
+
+
+/* =====================================================
+   TABLET / MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+
+    .page {
+
+        padding:
+            60px 15px 35px;
+
+    }
+
+
+
+    /* MUSIC */
+
+    .music-button {
+
+        top:
+            15px;
+
+        right:
+            15px;
+
+        width:
+            44px;
+
+        height:
+            44px;
+
+        font-size:
+            19px;
+
+    }
+
+
+
+    /* TRANG 1 */
+
+    .date {
+
+        top:
+            20px;
+
+        font-size:
+            12px;
+
+        letter-spacing:
+            3px;
+
+    }
+
+
+    .small-text {
+
+        font-size:
+            15px;
+
+    }
+
+
+    .hello h1 {
+
+        font-size:
+            45px;
+
+    }
+
+
+    .birthday-icon {
+
+        margin:
+            20px 0;
+
+        font-size:
+            60px;
+
+    }
+
+
+    .intro {
+
+        font-size:
+            15px;
+
+        line-height:
+            1.7;
+
+    }
+
+
+
+    /* BUTTON */
+
+    .main-button {
+
+        padding:
+            13px 25px;
+
+        font-size:
+            15px;
+
+    }
+
+
+
+    /* TRANG 2 */
+
+    .cake-page {
+
+        padding-top:
+            60px;
+
+    }
+
+
+    .cake-title {
+
+        margin-bottom:
+            15px;
+
+    }
+
+
+    .cake-title p {
+
+        font-size:
+            14px;
+
+    }
+
+
+    .cake-title h1 {
+
+        font-size:
+            30px;
+
+    }
+
+
+    .cake-title span {
+
+        font-size:
+            14px;
+
+    }
+
+
+
+    /* BÁNH */
+
+    .cake-area {
+
+        height:
+            250px;
+
+    }
+
+
+    .cake-container {
+
+        transform:
+            scale(.82);
+
+    }
+
+
+
+    /* ẢNH */
+
+    .photos {
+
+        width:
+            100%;
+
+        height:
+            470px;
+
+        margin-top:
+            5px;
+
+    }
+
+
+    .memory-photo {
+
+        width:
+            135px;
+
+        height:
+            180px;
+
+        padding:
+            5px;
+
+        border-radius:
+            11px;
+
+    }
+
+
+
+    /* ẢNH 1 */
+
+    .photo-1 {
+
+        left:
+            2%;
+
+        top:
+            75px;
+
+        transform:
+            translateX(-120px)
+            rotate(-12deg)
+            scale(.7);
+
+    }
+
+
+
+    /* ẢNH 2 */
+
+    .photo-2 {
+
+        right:
+            2%;
+
+        top:
+            40px;
+
+        transform:
+            translateX(120px)
+            rotate(12deg)
+            scale(.7);
+
+    }
+
+
+
+    /* ẢNH 3 */
+
+    .photo-3 {
+
+        left:
+            4%;
+
+        top:
+            auto;
+
+        bottom:
+            15px;
+
+        transform:
+            translateY(130px)
+            rotate(-8deg)
+            scale(.7);
+
+    }
+
+
+
+    /* ẢNH 4 */
+
+    .photo-4 {
+
+        left:
+            auto;
+
+        right:
+            4%;
+
+        bottom:
+            0;
+
+        transform:
+            translateY(130px)
+            rotate(8deg)
+            scale(.7);
+
+    }
+
+
+
+    .photo-1.show {
+
+        transform:
+            translateX(0)
+            rotate(-8deg)
+            scale(1);
+
+    }
+
+
+    .photo-2.show {
+
+        transform:
+            translateX(0)
+            rotate(8deg)
+            scale(1);
+
+    }
+
+
+    .photo-3.show {
+
+        transform:
+            translateY(0)
+            rotate(-5deg)
+            scale(1);
+
+    }
+
+
+    .photo-4.show {
+
+        transform:
+            translateY(0)
+            rotate(5deg)
+            scale(1);
+
+    }
+
+
+
+    /* TRANG 3 */
+
+    .wish-page {
+
+        padding:
+            55px 15px 30px;
+
+    }
+
+
+    .wish-card {
+
+        margin:
+            20px auto;
+
+        padding:
+            40px 22px;
+
+    }
+
+
+    .heart {
+
+        font-size:
+            45px;
+
+    }
+
+
+    .wish-card h1 {
+
+        font-size:
+            30px;
+
+    }
+
+
+    .line {
+
+        margin-bottom:
+            30px;
+
+    }
+
+
+    .wish-text {
+
+        font-size:
+            15px;
+
+        line-height:
+            1.9;
+
+    }
+
+
+    .wish-text p {
+
+        margin-bottom:
+            22px;
+
+    }
+
+
+    .final-wish {
+
+        font-size:
+            17px;
+
+    }
+
+
+    .signature {
+
+        font-size:
+            14px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   ĐIỆN THOẠI RẤT NHỎ
+===================================================== */
+
+@media (max-width: 380px) {
+
+
+    .hello h1 {
+
+        font-size:
+            38px;
+
+    }
+
+
+    .cake-container {
+
+        transform:
+            scale(.72);
+
+    }
+
+
+    .photos {
+
+        height:
+            440px;
+
+    }
+
+
+    .memory-photo {
+
+        width:
+            125px;
+
+        height:
+            165px;
+
+    }
+
+
+    .wish-card {
+
+        padding:
+            35px 18px;
+
+    }
+
+}
